@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	</head>
+<body>
+	<div>
+		<div >	
+		<form method="post">
+			<div class="form-group">
+				<label for="principle">principle: </label>
+				<input type="number" name="principle" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="rate">rate: </label>
+				<input type="number" name="rate" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="years">years: </label>
+				<input type="number" name="years" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="SI">SI: </label>
+				<input type="number" name="SI" class="form-control">
+			</div>
+
+			<button onclick="display()" class="btn btn-sm btn-primary">calculate</button>
+		</form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function display(){
+			var p = principle;
+			var r = rate;
+			var y = years;
+			var SI = simpleInterest;
+			SI = p * r * y;
+		}
+		display()
+	</script>
+
+</body>

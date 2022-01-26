@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var names = ["john","sam","rob"];
+		// how to access an element of an array
+		document.write(names[1]);
+
+		// length of an array
+		var people = ["john","sam","rob"];
+		var len = people.length;
+		document.write(len);
+
+		// add an elementinto ana array
+		var people = ["john","sam","rob"];
+		people.push("chris");
+		document.write(people[3]);
+
+		// arraymethods
+		var people = ["john","sam","rob"];
+		var x = people.toString();
+		document.write(x);
+
+		var people = ["john","sam","rob"];
+		var x = people.shift();
+		var y = people.pop();
+		document.write(x);
+
+		var people = ["john","sam","rob"];
+		people.unshift("charles");
+		delete people[1];
+		var x = people.toString();
+		document.write(x);
+
+
+		// to join two arraymethods
+		var people = ["john","sam","rob"];
+		var number = [1,2,3,4];
+		var new_array = people.concat(number);
+		var x = new_array.toString();
+		document.write(x);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
